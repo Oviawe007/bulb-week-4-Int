@@ -1,0 +1,33 @@
+Resources:
+  WorkstationServer:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-052387465d846f3fc
+      KeyName: ec2_mac_key
+      Tags: 
+        - 
+          Key: name
+          Value: Workstation
+  
+  ServerOne:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-052387465d846f3fc
+      KeyName: ec2_mac_key
+      Tags: 
+        - 
+          Key: name
+          Value: Server-1
+
+  ServerTwo:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-052387465d846f3fc
+      KeyName: ec2_mac_key
+      Tags: 
+        - 
+          Key: name
+          Value: Server-2
